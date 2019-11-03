@@ -1,0 +1,161 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ---------- container ---------- */
+.container {
+    padding: 10px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+/* ---------- header ---------- */
+.header {
+    width: 380px;
+    height: 200px;
+    background-image: url('../img/bg2.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.clear {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.clear i {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clear i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+.date {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    color: white;
+    font-size: 25px;
+    user-select: none;
+}
+
+/* ---------- content ---------- */
+
+.content {
+    width: 380px;
+    height: 350px;
+    max-height: 350px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.co {
+    position: absolute;
+    font-size: 24px;
+    margin: 0;
+    left: 10px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+
+.text {
+    position: absolute;
+    font-size: 22px;
+    left: 45px;
+    line-height: 45px;
+    margin: 0;
+    user-select: none;
+}
+
+.de {
+    position: absolute;
+    font-size: 22px;
+    right: 20px;
+    line-height: 45px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.de:hover {
+    color: rgb(245, 77, 77);
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ---------- add item ---------- */
+.add-to-do {
+    position: relative;
+    width: 360px;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-to-do i {
+    position: absolute;
+    font-size: 35px;
+    color: #4162f6;
+    cursor: pointer;
+}
+
+.add-to-do input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
